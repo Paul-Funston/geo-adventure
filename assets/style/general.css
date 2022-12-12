@@ -4,8 +4,8 @@
     --app-color-primary: ;
     --app-color-secondary: ;
 
-    --app-dark-bg:         26 29 40;
-    --app-light-bg:     234 238 242;
+    --app-dark-bg:         30 31 28;
+    --app-light-bg:        39 40 34;
     --app-red:          219 112 147;
     --app-green:        112 219 147;
     --app-purple:       147 112 219;
@@ -27,8 +27,8 @@
 /*  Default                                                                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-p, h1, h2, h3, h4, h5, h6 {
-    color: rgb(40 40 40);
+p, h1, h2, h3, h4, h5, h6, a, li {
+    color: rgb(230 230 250);
 }
 
 
@@ -42,7 +42,6 @@ header {
 }
 
 nav a {
-    color: rgb(40 40 40);
     text-decoration: none;
 }
 
@@ -66,6 +65,7 @@ nav ul {
 footer {
     height: var(--footer-height);
     background-color: rgb(var(--app-light-bg));
+    margin-top: 1rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -74,6 +74,11 @@ footer {
 
 main {
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+body {
+    background-color: rgb(var(--app-dark-bg));
+
 }
 
 

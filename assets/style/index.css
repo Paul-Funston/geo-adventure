@@ -1,5 +1,43 @@
 @import "./general.css";
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Hero                                                                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+section {
+  margin-bottom: 1rem;
+
+}
+figure {
+  overflow: hidden;
+  background-image: url('../media/tim-swaan-eOpewngf68w-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - var(--header-height));
+  display: grid;
+  place-items: center;
+  
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.caption {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+}
+
+img {
+  height: calc(100vh - var(--header-height));
+
+
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Map                                                                      */
@@ -12,14 +50,13 @@
 
 .map-container {
   position: relative;
-  padding: 1rem 0;
   width: 100%;
   max-height: calc(100vh - var(--header-height) - var(--footer-height) - 2rem);
 }
 
 .map-cover {
   position: absolute;
-  inset: 1rem 0;
+  inset: 0;
   background-color: darkgrey;
   display: grid;
   place-items: center;

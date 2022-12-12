@@ -58,7 +58,7 @@ function requestLocation() {
 
 function stopSpin() {
   const loading = document.querySelector('.loading');
-  loading.style.animation = '';
+  loading.style.animation = 'none';
 };
 
 function clearCover() {
@@ -88,4 +88,4 @@ function createMap(long, lat) {
 
 
 
-requestLocation()
+requestLocation();
