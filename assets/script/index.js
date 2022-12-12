@@ -7,20 +7,11 @@
 
 */
 
-
   // Finding Location
-
-
-// let lat = 0;
-// let alt = 0;
-// let long = 0;
-
-let long,lat,alt;
+let long,lat;
 
 function getLocation(position) {
-  // console.log(position);
-  const { altitude, latitude, longitude } = position.coords;
-  alt = altitude ? altitude : undefined;
+  const { latitude, longitude } = position.coords;
   lat = latitude;
   long = longitude;
   
@@ -31,7 +22,7 @@ function getLocation(position) {
 function errorHandler(event) {
   console.log(event);
   stopSpin();
-  // throw (event.message);
+  document.querySelector('.gps-state').innerHTML = 'Geolocation must be allowed to function'
 };
 
 const options = {
@@ -39,8 +30,6 @@ const options = {
 };
 
 function requestLocation() {
-
-  // return new Promise((resolve, reject) => {
     try {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -48,12 +37,10 @@ function requestLocation() {
           errorHandler,
           options
           );
-          // resolve()
       } 
     } catch (error) {
       console.log(error.message);
     }
-  // })
 }
 
 function stopSpin() {

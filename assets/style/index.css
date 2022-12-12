@@ -3,9 +3,8 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Hero                                                                     */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-section {
-  margin-bottom: 1rem;
-
+section:first-child {
+  margin-top: 0;
 }
 figure {
   overflow: hidden;
@@ -37,6 +36,12 @@ img {
   height: calc(100vh - var(--header-height));
 
 
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main                                                                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+section {
+  margin: 1rem 0;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -77,5 +82,4 @@ img {
   0%  {transform: none}
   50% {transform: rotate(0.5turn)}
   100% {transform: rotate(1.0turn)}
-
 }

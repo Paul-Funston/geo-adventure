@@ -86,7 +86,7 @@ body {
 /*  Form                                                                     */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-
+/* 
 
 input:not([type=button]) {
     width: 100%;
@@ -108,13 +108,13 @@ form input + input {
 
 input:not([type=text]):focus {
     border: 1px solid rgb(255 255 255 / 0.25);
-}
+} */
   
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Button                                                                     */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   
-button, input[type=button] {
+/* button, input[type=button] {
     width: 120px;
     height: 46px;
     text-align: center;
@@ -132,4 +132,4 @@ button, input[type=button] {
 
 button:hover, input[type=button]:hover {
     background-color: rgb(var(--app-blue-second));
-}
+} */
