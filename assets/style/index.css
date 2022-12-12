@@ -6,7 +6,39 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #map {
-  margin: 1rem 0;
-  height: 50vh;
+  height: calc(100vh - var(--header-height) - var(--footer-height) - 2rem);
   width: 100%;
+}
+
+.map-container {
+  position: relative;
+  padding: 1rem 0;
+  width: 100%;
+  max-height: calc(100vh - var(--header-height) - var(--footer-height) - 2rem);
+}
+
+.map-cover {
+  position: absolute;
+  inset: 1rem 0;
+  background-color: darkgrey;
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.loading {
+  --app-side: 5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: var(--app-side);
+  width: var(--app-side);
+  border-bottom: none;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0%  {transform: none}
+  50% {transform: rotate(0.5turn)}
+  100% {transform: rotate(1.0turn)}
+
 }

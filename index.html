@@ -20,20 +20,24 @@
         <header>
             <div class="container">
                 <h1>Geo Adventure</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main>
             <div class="container">
-                <div id='map'></div>
-                <!-- <script>
-                mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGZ1biIsImEiOiJjbGJncm80Z2MwY2F4M3FwNXpxZjh5cjV6In0.9-biahBbvoH-rpsabZLQgQ';
-                const map = new mapboxgl.Map({
-                    container: 'map', // container ID
-                    style: 'mapbox://styles/mapbox/streets-v12', // style URL
-                    center: [-97.1, 49.9], // starting position [lng, lat]
-                    zoom: 8, // starting zoom
-                });
-                </script> -->
+                <div class="map-container">
+                    <div id='map'></div>
+                    <div class="map-cover">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+
 
             </div>
         </main>
